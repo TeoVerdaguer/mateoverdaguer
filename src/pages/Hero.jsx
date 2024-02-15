@@ -1,6 +1,5 @@
-import { useEffect } from "react";
 import { portrait } from "../assets/images";
-import { pattern } from "../assets/images";
+// import { pattern } from "../assets/images";
 import Button from "../components/Button";
 import { motion } from "framer-motion";
 
