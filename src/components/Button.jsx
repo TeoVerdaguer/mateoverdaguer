@@ -1,4 +1,4 @@
-const Button = ({ label, iconURL, backgroundColor, textColor, borderColor, fullWidth }) => {
+const Button = ({ label, iconURL, action, backgroundColor, textColor, borderColor, fullWidth }) => {
   return (
     // <button
     //   className={`flex justify-center items-center gap-2
@@ -12,7 +12,9 @@ const Button = ({ label, iconURL, backgroundColor, textColor, borderColor, fullW
     // >
       <button
         className="flex justify-center items-center gap-2 px-7 py-4 font-montserrat text-lg leading-none
-        bg-gradient-to-r from-[#ff5e69] via-[#ff8a56] to-[#ffa84b] text-white rounded-lg"
+        bg-gradient-to-r from-[#ff5e69] via-[#ff8a56] to-[#ffa84b] text-white rounded-lg
+        hover:shadow-lg hover:-translate-y-0.5"
+        onClick={action}
       >
       {label}
 

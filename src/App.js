@@ -9,10 +9,10 @@ function App() {
   return (
     <main>
       <Nav />
-      <section className="xl:padding-l wide:padding-r padding-b">
+      <section className="xl:padding-l wide:padding-r">
         <Hero />
       </section>
-      <section className="padding">
+      <section>
         <Resume />
       </section>
       <section  className="padding">

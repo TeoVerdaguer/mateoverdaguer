@@ -47,6 +47,7 @@ const Hero = () => {
           backgroundColor={"main-gradient"}
           textColor={"text-white"}
           borderColor={"border-[main-gradient]"}
+          action={() => { window.scrollTo(0, document.body.scrollHeight) }}
          />
       </motion.div>
 

@@ -1,10 +1,23 @@
-import { site1, site2, site3, site4, site5, site6, site7, site8, email, phone, linkedin } from '../assets/images';
+import { 
+  site1,
+  site2,
+  site3,
+  site4,
+  site5,
+  site6,
+  site7,
+  site8,
+  email,
+  phone,
+  linkedin,
+  github 
+} from '../assets/images';
 
 export const navLinks = [
   { href: "#home", label: "Home" },
   { href: "#resume", label: "Resume" },
-  { href: "#portfolio", label: "My Portfolio" },
-  { href: "#contact-me", label: "Contact Me" },
+  { href: "#projects", label: "My Portfolio" },
+  { href: "#contact", label: "Contact Me" },
 ];
 
 export const sites = [
@@ -34,7 +47,7 @@ export const sites = [
   },
   {
     id: 3,
-    title: 'Ecommerce site - Code challenge for Aerolab',
+    title: 'Ecommerce - Code challenge for Aerolab',
     img: site3,
     alt: 'Screenshot of Ecommerce site for Aerolab',
     link: 'https://aerolab-code-challenge.netlify.app/',
@@ -92,5 +105,11 @@ export const contactLinks = [
     icon: linkedin,
     link: 'https://www.linkedin.com/in/mateo-verdaguer/',
     label: 'linkedin icon'
+  },
+  {
+    id: 4,
+    icon: github,
+    link: 'https://github.com/TeoVerdaguer',
+    label: 'github icon'
   },
 ]
