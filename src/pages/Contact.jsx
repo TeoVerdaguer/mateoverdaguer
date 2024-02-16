@@ -11,7 +11,7 @@ const Contact = () => {
       <div className="flex justify-between items-center max-sm:justify-center">
         <img
           src={portrait2}
-          alt="portrait image"
+          alt="portrait"
           width={300}
           className="max-sm:hidden"
         />
