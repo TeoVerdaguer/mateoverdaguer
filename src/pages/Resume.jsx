@@ -1,12 +1,12 @@
-import { portrait } from "../assets/images";
+import { portraitStats } from "../assets/images";
 
 const Resume = () => {
   return (
     <section
       id="resume"
-      className="max-container mt-12 flex flex-col items-center justify-center"
+      className="max-container sm:mt-12 flex flex-col items-center justify-center mx-6"
     >
-      <img src={portrait} alt="" className="w-80 mb-10" />
+      <img src={portraitStats} alt="" className="w-80 mb-10" />
       <div
         className="flex text-white font-jakarta-sans w-[90%]
         lg:w-[70%] justify-between"

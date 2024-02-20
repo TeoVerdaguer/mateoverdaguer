@@ -8,7 +8,8 @@ import site7 from './site7.png';
 import site8 from './site8.png';
 import headerLogo from './header-logo.svg';
 import portrait from './portrait.png'
-import portrait2 from './portrait2.png'
+import portraitStats from './portrait-stats.png'
+import portraitContact from './portrait-contact.png'
 import pattern from './pattern.png'
 import email from './email.png';
 import phone from './phone.png';
@@ -26,7 +27,8 @@ export {
   site8,
   headerLogo,
   portrait,
-  portrait2,
+  portraitStats,
+  portraitContact,
   pattern,
   email,
   phone,

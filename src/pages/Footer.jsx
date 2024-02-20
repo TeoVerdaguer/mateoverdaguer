@@ -38,8 +38,8 @@ const Footer = () => {
         </ul>
       </div>
       <div className="text-center bg-[#1e1e1e] pb-2">
-        <p className="mt-auto mb-5 text-slate-600">
-          © Copyright Mateo Verdaguer. All Rights Reserved.
+        <p className="mt-auto mb-5 text-slate-600 text-xs sm:text-sm">
+          © Copyright Mateo Verdaguer. All Rights Reserved
         </p>
       </div>
     </footer>

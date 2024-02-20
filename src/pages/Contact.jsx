@@ -1,4 +1,4 @@
-import { portrait2 } from "../assets/images";
+import { portraitContact } from "../assets/images";
 import { contactLinks } from "../constants";
 
 const Contact = () => {
@@ -10,7 +10,7 @@ const Contact = () => {
     >
       <div className="flex items-center justify-center min-md:justify-between">
         <img
-          src={portrait2}
+          src={portraitContact}
           alt="portrait"
           width={300}
           className="hidden md:block"
