@@ -4,25 +4,24 @@ import { contactLinks } from "../constants";
 const Contact = () => {
   return (
     <section
-      className="max-container flex justify-center mt-20
-        max-lg:flex-col gap-10 text-white font-jakarta-sans text-2xl"
+      className="max-container flex justify-center mt-20 text-white
+      font-jakarta-sans text-2xl max-lg:flex-col"
       id="contact"
     >
-      <div className="flex justify-between items-center max-sm:justify-center">
+      <div className="flex items-center justify-center min-md:justify-between">
         <img
           src={portrait2}
           alt="portrait"
           width={300}
-          className="max-sm:hidden"
+          className="hidden md:block"
         />
 
         <div
-          className="ml-20 p-0.5 bg-gradient-to-r from-[#b16cea] via-[#ff5e69]  to-[#ffa84b]
-          rounded-xl max-w-[620px] max-sm:ml-0"
+          className="p-0.5 bg-gradient-to-r from-[#b16cea] via-[#ff5e69]
+          to-[#ffa84b] rounded-xl ml-0 lg:ml-20"
         >
           <div
-            className="flex flex-col items-center rounded-xl max-w-[610px]
-        p-8 bg-[#1e1e1e] md:w-[50vw] max-lg:w-[50vw]"
+            className="flex flex-col items-center rounded-xl p-10 lg:px-40 bg-[#1e1e1e]"
           >
             <div>
               <h2 className="text-4xl mb-10 main-gradient font-jakarta-sans">Follow me</h2>
@@ -31,7 +30,7 @@ const Contact = () => {
                 <br />website of your dreams.
               </p>
             </div>
-            <div className="flex justify-center gap-8 pt-10 px-8 max-sm:gap-2 max-sm:px-2">
+            <div className="flex justify-center gap-8 pt-10">
               {contactLinks.map((link) => (
                 <a href={link.link} target="blank" key={link.id}>
                   <img

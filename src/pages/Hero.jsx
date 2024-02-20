@@ -17,13 +17,13 @@ const Hero = () => {
         animate={{ x: 0 }}
         transition={{ duration: 0.75 }}
       >
-        <h1 className="mt-10 font-palanquin text-7xl max-sm:text-[40px] max-sm:leading-[82px] font-bold">
+        <h1 className="mt-10 font-palanquin min-lg:text-7xl text-[40px] leading-[82px] md:leading-[90px] font-bold">
           <span className="font-normal font-jakarta-sans text-slate-100 relative z-10 pr-10">
             Hi! 👋&ensp;I'm
           </span>
           <br />
-          <span className="font-jakarta-sans text-7xl max-sm:text-5xl main-gradient inline-block
-          h-full mt-3 leading-tight max-sm:leading-relaxed">
+          <span className="font-jakarta-sans lg:text-7xl text-5xl main-gradient inline-block
+          h-full mt-3 md:leading-tight lg:leading-tight leading-relaxed">
             Mateo Verdaguer
           </span>
         </h1>
@@ -43,8 +43,7 @@ const Hero = () => {
           I'm a web developer based in Argentina with 4+ years of experience building websites and web applications.
         </p>
         <Button 
-          label="Hire Me" 
-          backgroundColor={"main-gradient"}
+          label="Hire Me"
           textColor={"text-white"}
           borderColor={"border-[main-gradient]"}
           action={() => { window.scrollTo(0, document.body.scrollHeight) }}
