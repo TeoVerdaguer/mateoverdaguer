@@ -62,7 +62,7 @@ const Hero = () => {
         animate={{ x: 0 }}
         transition={{ duration: 0.75 }}
         className="relative flex-1 flex justify-center items-center xl:min-h-screen 
-          max-xl:py-40 sm:py-10 max-sm:hidden bg-primary bg-hero bg-cover bg-center"
+          max-xl:py-40 sm:py-10 bg-primary bg-hero bg-cover bg-center"
       >
         <img
           src={portrait}

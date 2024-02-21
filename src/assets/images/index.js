@@ -18,6 +18,8 @@ import github from './github.png';
 import resume1 from './resume-1.jpeg';
 import resume2 from './resume-2.jpeg';
 import resume3 from './resume-3.jpeg';
+import waves from './waves.svg';
+import waves1 from './waves1.svg';
 
 export {
   site1,
@@ -39,5 +41,7 @@ export {
   github,
   resume1,
   resume2,
-  resume3
+  resume3,
+  waves,
+  waves1
 }
