@@ -1,4 +1,4 @@
-import { resume1, resume2, resume3, waves, waves1 } from "../assets/images";
+import { resume1, resume2, resume3 } from "../assets/images";
 
 const Resume = () => {
   return (
