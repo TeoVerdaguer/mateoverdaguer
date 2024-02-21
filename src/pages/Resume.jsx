@@ -35,21 +35,21 @@ const Resume = () => {
         <div>
           <h2 className="main-gradient text-4xl mb-4">Certifications</h2>
           <h3 className="text-2xl mt-10">The creative React and Redux course</h3>
-          <div className="flex justify-between text-gray-400">
+          <div className="flex justify-between text-gray-400 text-xs sm:text-sm md:text-md">
             <p>developedbyed.com - Online</p>
             <p>&bull;&ensp;2022</p>
           </div>
 
           <hr className="h-px mt-6 bg-gray-800 border-0" />
           <h3 className="text-2xl mt-6">JavaScript Course</h3>
-          <div className="flex justify-between text-gray-400">
+          <div className="flex justify-between text-gray-400 text-xs sm:text-sm md:text-md">
             <p>Coderhouse - Online</p>
             <p>&bull;&ensp;2021</p>
           </div>
 
           <hr className="h-px mt-6 bg-gray-800 border-0" />
           <h3 className="text-2xl mt-6">JAVA 7 Oracle certification</h3>
-          <div className="flex justify-between text-gray-400">
+          <div className="flex justify-between text-gray-400 text-xs sm:text-sm md:text-md">
             <p>Academia CISCO, UTN - Córdoba, Argentina</p>
             <p>&bull;&ensp;2019</p>
           </div>
@@ -57,21 +57,21 @@ const Resume = () => {
         <div>
           <h2 className="main-gradient text-4xl mb-4 mt-20 lg:mt-0">Work Experience</h2>
           <h3 className="text-2xl mt-10">Web UI Dev Semi Sr Advanced</h3>
-          <div className="flex justify-between text-gray-400">
+          <div className="flex justify-between text-gray-400 text-xs sm:text-sm md:text-md">
             <p>Globant, Córdoba, Argentina</p>
             <p>&bull;&ensp;2019 - Present</p>
           </div>
 
           <hr className="h-px mt-6 bg-gray-800 border-0" />
           <h3 className="text-2xl mt-6">Web UI and Mobile Developer</h3>
-          <div className="flex justify-between text-gray-400">
+          <div className="flex justify-between text-gray-400 text-xs sm:text-sm md:text-md">
             <p>Risto - Córdoba, Argentina</p>
             <p>&bull;&ensp;2023</p>
           </div>
 
           <hr className="h-px mt-6 bg-gray-800 border-0" />
           <h3 className="text-2xl mt-6">IT Help Desk</h3>
-          <div className="flex justify-between text-gray-400">
+          <div className="flex justify-between text-gray-400 text-xs sm:text-sm md:text-md">
             <p>Key Soluciones - Córdoba, Argentina</p>
             <p>&bull;&ensp;2018 - 2019</p>
           </div>

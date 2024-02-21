@@ -4,8 +4,8 @@ import { contactLinks } from "../constants";
 const Contact = () => {
   return (
     <section
-      className="max-container flex justify-center mt-20 text-white
-      font-jakarta-sans text-2xl max-lg:flex-col"
+      className="flex justify-center mt-20 text-white
+      font-jakarta-sans text-2xl mx-4 max-lg:flex-col"
       id="contact"
     >
       <div className="flex items-center justify-center min-md:justify-between">
