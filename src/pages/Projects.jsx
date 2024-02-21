@@ -4,9 +4,9 @@ import { sites } from '../constants';
 const Projects = () => {
   return (
     <section id="projects" className="max-container max-sm:mt-12">
-      <h1 className="text-5xl p-20 font-jakarta-sans
+      <h1 className="text-5xl font-jakarta-sans sm:py-20
       main-gradient text-center">
-        Projects
+      Projects
       </h1>
 
       <div className='mt-16 grid xl:grid-cols-4 lg:grid-cols-3 md:grid-cols-2 

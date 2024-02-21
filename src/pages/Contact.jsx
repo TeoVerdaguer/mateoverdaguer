@@ -26,8 +26,8 @@ const Contact = () => {
             <div>
               <h2 className="text-4xl mb-10 main-gradient font-jakarta-sans">Follow me</h2>
               <p className="text-lg  font-jakarta-sans">
-                Reach me if you want to build the
-                <br />website of your dreams.
+                Contact me if you want to build
+                <br />something together or just follow me
               </p>
             </div>
             <div className="flex justify-center gap-8 pt-10">

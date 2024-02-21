@@ -15,6 +15,9 @@ import email from './email.png';
 import phone from './phone.png';
 import linkedin from './linkedin.png';
 import github from './github.png';
+import resume1 from './resume-1.jpeg';
+import resume2 from './resume-2.jpeg';
+import resume3 from './resume-3.jpeg';
 
 export {
   site1,
@@ -33,5 +36,8 @@ export {
   email,
   phone,
   linkedin,
-  github
+  github,
+  resume1,
+  resume2,
+  resume3
 }
