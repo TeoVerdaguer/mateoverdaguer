@@ -4,6 +4,7 @@
 
 html {
   background-color: #161513;
+  overflow-x: hidden;
 }
 
 * {
