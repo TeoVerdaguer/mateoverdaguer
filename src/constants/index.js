@@ -5,7 +5,6 @@ import {
   site4,
   site5,
   site6,
-  site7,
   site8,
   site9,
   email,
