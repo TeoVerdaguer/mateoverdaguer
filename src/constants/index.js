@@ -7,6 +7,7 @@ import {
   site6,
   site7,
   site8,
+  site9,
   email,
   phone,
   linkedin,
@@ -21,6 +22,14 @@ export const navLinks = [
 ];
 
 export const sites = [
+  {
+    id: 9,
+    title: 'Tipeando',
+    img: site9,
+    alt: 'Screenshot of Tipeando website',
+    link: 'https://tipeando.app',
+    desc: 'A modern and secure solution for tipping.'
+  },
   {
     id: 1,
     title: 'Eliana Barrionuevo portfolio',
@@ -77,14 +86,14 @@ export const sites = [
     link: 'https://metindustrial.netlify.app/',
     desc: 'Landing page I developed for a metalworking company.'
   },
-  {
-    id: 7,
-    title: 'Deliciousss website - React course',
-    img: site7,
-    alt: 'Screenshot of Delicious website',
-    link: 'https://deliciousss-reactapp.netlify.app/',
-    desc: 'Website I developed in a React course from "developedbyed".'
-  }
+  // {
+  //   id: 7,
+  //   title: 'Deliciousss website - React course',
+  //   img: site7,
+  //   alt: 'Screenshot of Delicious website',
+  //   link: 'https://deliciousss-reactapp.netlify.app/',
+  //   desc: 'Website I developed in a React course from "developedbyed".'
+  // }
 ];
 
 export const contactLinks = [

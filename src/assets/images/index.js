@@ -6,6 +6,7 @@ import site5 from './site5.png';
 import site6 from './site6.png';
 import site7 from './site7.png';
 import site8 from './site8.png';
+import site9 from './site9.png';
 import headerLogo from './header-logo.svg';
 import portrait from './portrait.png'
 import portraitStats from './portrait-stats.png'
@@ -30,6 +31,7 @@ export {
   site6,
   site7,
   site8,
+  site9,
   headerLogo,
   portrait,
   portraitStats,
