@@ -22,8 +22,16 @@ export const navLinks = [
 
 export const sites = [
   {
+    id: 3,
+    title: 'Code challenge for Aerolab',
+    img: site3,
+    alt: 'Screenshot of Ecommerce site for Aerolab',
+    link: 'https://aerolab-code-challenge.netlify.app/',
+    desc: 'Ecommerce website I developed for a code challenge from Aerolab.'
+  },
+  {
     id: 9,
-    title: 'Tipeando',
+    title: 'Tipeando Landing Page',
     img: site9,
     alt: 'Screenshot of Tipeando website',
     link: 'https://tipeando.app',
@@ -52,14 +60,6 @@ export const sites = [
     alt: 'Screenshot of Nike website using tailwind CSS',
     link: 'https://nike-website-tailwind.netlify.app/',
     desc: 'Nike website redesign I developed in a tailwind course.'
-  },
-  {
-    id: 3,
-    title: 'Ecommerce - Code challenge for Aerolab',
-    img: site3,
-    alt: 'Screenshot of Ecommerce site for Aerolab',
-    link: 'https://aerolab-code-challenge.netlify.app/',
-    desc: 'Ecommerce website I developed for a code challenge for Aerolab.'
   },
   {
     id: 4,
