@@ -22,6 +22,14 @@ export const navLinks = [
 
 export const sites = [
   {
+    id: 1,
+    title: 'Eliana Barrionuevo portfolio',
+    img: site1,
+    alt: 'Screenshot of Eliana Barrionuevo portfolio website',
+    link: 'https://eliana-web-pi.vercel.app/',
+    desc: 'Portfolio website for Eliana (graphic designer).'
+  },
+  {
     id: 3,
     title: 'Code challenge for Aerolab',
     img: site3,
@@ -36,14 +44,6 @@ export const sites = [
     alt: 'Screenshot of Tipeando website',
     link: 'https://tipeando.app',
     desc: 'A modern and secure solution for tipping.'
-  },
-  {
-    id: 1,
-    title: 'Eliana Barrionuevo portfolio',
-    img: site1,
-    alt: 'Screenshot of Eliana Barrionuevo portfolio website',
-    link: 'https://elianabarrionuevo.netlify.app/',
-    desc: 'Portfolio website for Eliana (graphic designer).'
   },
   {
     id: 8,
