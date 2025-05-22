@@ -9,21 +9,11 @@ function App() {
   return (
     <main>
       <Nav />
-      <section className="xl:padding-l wide:padding-r">
-        <Hero />
-      </section>
-      <section>
-        <Resume />
-      </section>
-      <section  className="padding">
-        <Projects />
-      </section>
-      <section>
-        <Contact />
-      </section>
-      <section>
-        <Footer />
-      </section>
+      <Hero />
+      <Resume />
+      <Projects />
+      <Contact />
+      <Footer />
     </main>
   );
 }

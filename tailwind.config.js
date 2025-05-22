@@ -9,9 +9,6 @@ module.exports = {
       fontFamily: {
         'jakarta-sans': ['FontPlusJakartaSans', 'sans-serif'],
       },
-      backgroundImage: {
-        'waves': "url('/src/assets/images/waves.svg')",
-      },
     },
   },
   plugins: [],

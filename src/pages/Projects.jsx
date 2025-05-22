@@ -9,7 +9,7 @@ const Projects = () => {
       Projects
       </h1>
 
-      <div className='mt-16 grid xl:grid-cols-4 lg:grid-cols-3 md:grid-cols-2 
+      <div className='mt-16 md:mt-4 grid xl:grid-cols-4 lg:grid-cols-3 md:grid-cols-2 
       sm:grid-cols-2 grid-cols-1 md:gap-14 gap-6'>
         {sites.map(site => (
           <ProjectCard key={site.id} {...site} />

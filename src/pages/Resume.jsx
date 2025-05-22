@@ -4,12 +4,8 @@ const Resume = () => {
   return (
     <section
       id="resume"
-      className="sm:mt-12 flex flex-col items-center justify-center mx-6"
+      className="sm:mt-12 flex flex-col items-center justify-center mx-6 my-20"
     >
-      {/* <div className="m-20 w-[110vw] h-[650px]">
-        <img src={waves} alt="waves" className="w-full h-[650px] object-cover" />
-      </div> */}
-
       <div className="hidden lg:flex flex-col lg:flex-row gap-8">
         <img src={resume1} alt="" className="w-[400px] lg:w-80 mb-2 mt-20 sm:mt-0 lg:mb-10 object-cover" />
         <img src={resume2} alt="" className="h-[200px] w-[400px] lg:h-[500px] lg:w-80 mb-2 lg:mb-10 object-cover" />

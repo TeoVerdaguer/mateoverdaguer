@@ -1,5 +1,4 @@
 import { portrait } from "../assets/images";
-// import { pattern } from "../assets/images";
 import Button from "../components/Button";
 import { motion } from "framer-motion";
 
@@ -8,22 +7,22 @@ const Hero = () => {
   return (
     <section
       id="home"
-      className="w-full flex xl:flex-row flex-col justify-center
-      min-h-screen gap-10 max-container"
+      className="w-full px-10 flex xl:flex-row flex-col items-center gap-10 justify-center
+      min-h-screen pb-20"
     >
       <motion.div
-        className="relative xl:w-2/5 flex flex-col justify-center items-start w-full max-xl:padding-x pt-28"
+        className="flex flex-col items-start w-full xl:w-2/5"
         initial={{ x: -1000 }}
         animate={{ x: 0 }}
         transition={{ duration: 0.75 }}
       >
-        <h1 className="mt-10 font-palanquin min-lg:text-7xl text-[40px] leading-[82px] md:leading-[90px] font-bold">
+        <h1 className="font-palanquin min-lg:text-7xl text-[34px] leading-[82px] md:leading-[90px] font-bold">
           <span className="font-normal font-jakarta-sans text-slate-100 relative z-10 pr-10">
             Hi! 👋&ensp;I'm
           </span>
           <br />
           <span className="font-jakarta-sans lg:text-7xl text-5xl main-gradient inline-block
-          h-full mt-3 md:leading-tight lg:leading-tight leading-relaxed">
+          h-full md:leading-tight lg:leading-tight leading-relaxed">
             Mateo Verdaguer
           </span>
         </h1>
@@ -50,25 +49,18 @@ const Hero = () => {
          />
       </motion.div>
 
-      {/* BACKGROUND LINES PATTERN */}
-      {/* <img 
-        src={pattern}
-        alt="lines pattern background"
-        className="absolute top-[72px] right-0 w-[60%] h-[95%] object-cover z-0"
-      /> */}
-
       <motion.div
         initial={{ x: 1000 }}
         animate={{ x: 0 }}
         transition={{ duration: 0.75 }}
-        className="relative flex-1 flex justify-center items-center xl:min-h-screen 
-          max-xl:py-40 sm:py-10 bg-primary bg-hero bg-cover bg-center"
+        className="flex justify-center bg-cover bg-center"
       >
         <img
           src={portrait}
-          alt="shoe collection"
-          width={500}
-          className="object-contain relative z-10"
+          alt="portrait"
+          // width={500}
+          // height={764}
+          className="w-[300px] h-[450px] sm:w-[400px] sm:h-[600px] "
         />
 
       </motion.div>

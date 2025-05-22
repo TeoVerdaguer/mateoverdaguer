@@ -3,7 +3,7 @@ import { navLinks } from "../constants";
 
 const Nav = () => {
   return (
-    <header className="sm:px-16 px-8 pt-6 absolute z-10 w-full border-b-[1px] border-slate-800">
+    <header className="sm:px-16 px-8 pt-6 z-10 w-full border-b-[1px] border-slate-800">
       <nav className="flex justify-between items-center max-container">
         <a href="/">
           <img
