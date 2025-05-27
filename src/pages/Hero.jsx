@@ -8,7 +8,7 @@ const Hero = () => {
     <section
       id="home"
       className="w-full px-10 flex xl:flex-row flex-col items-center gap-10 justify-center
-      min-h-screen pb-20"
+      min-h-screen mt-10 md:mt-0 md:pb-20"
     >
       <motion.div
         className="flex flex-col items-start w-full xl:w-2/5"
@@ -58,9 +58,7 @@ const Hero = () => {
         <img
           src={portrait}
           alt="portrait"
-          // width={500}
-          // height={764}
-          className="w-[300px] h-[450px] sm:w-[400px] sm:h-[600px] "
+          className="w-[300px] sm:w-[400px] mt-10"
         />
 
       </motion.div>
