@@ -3,7 +3,7 @@ import { sites } from '../constants';
 
 const Projects = () => {
   return (
-    <section id="projects" className="max-container max-sm:mt-12 mx-4">
+    <section id="projects" className="max-container max-sm:mt-12 mx-auto">
       <h1 className="text-5xl font-jakarta-sans sm:py-20
       main-gradient text-center">
       Projects
