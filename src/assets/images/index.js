@@ -1,12 +1,10 @@
 import site1 from './site1.webp';
-import site2 from './site2.webp';
 import site3 from './site3.webp';
-import site4 from './site4.webp';
-import site5 from './site5.webp';
 import site6 from './site6.webp';
-import site7 from './site7.webp';
 import site8 from './site8.webp';
 import site9 from './site9.webp';
+import site10 from './site10.webp';
+import site11 from './site11.webp';
 import headerLogo from './header-logo.svg';
 import portrait from './portrait.webp'
 import portraitStats from './portrait-stats.webp'
@@ -21,14 +19,12 @@ import resume3 from './resume-3.webp';
 
 export {
   site1,
-  site2,
   site3,
-  site4,
-  site5,
   site6,
-  site7,
   site8,
   site9,
+  site10,
+  site11,
   headerLogo,
   portrait,
   portraitStats,

@@ -16,7 +16,7 @@ const Footer = () => {
           <p className="font-jakarta-sans text-sm text-slate-300
             sm:text-sm
           ">
-            Web Developer based in Argentina with 4+ years of experience
+            Web Developer based in Argentina with 5+ years of experience
             developing websites and applications.
             <br />I have experience working with Angular, React, NextJS, React
             Native, tailwindCSS and more.

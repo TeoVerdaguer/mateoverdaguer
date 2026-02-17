@@ -27,7 +27,7 @@ const Hero = () => {
           </span>
         </h1>
 
-        <motion.div 
+        <motion.div
           initial={{ x: -1000 }}
           animate={{ x: 0 }}
           transition={{ duration: 1 }}
@@ -39,14 +39,14 @@ const Hero = () => {
         </motion.div>
 
         <p className="font-jakarta-sans text-slate-100 text-md max-sm:text-sm leading-8 mt-6 mb-14 sm:max-w-sm">
-          I'm a web developer based in Argentina with 4+ years of experience building websites and web applications.
+          I'm a web developer based in Argentina with 5+ years of experience building websites and web applications.
         </p>
-        <Button 
+        <Button
           label="Hire Me"
           textColor={"text-white"}
           borderColor={"border-[main-gradient]"}
           action={() => { window.scrollTo(0, document.body.scrollHeight) }}
-         />
+        />
       </motion.div>
 
       <motion.div

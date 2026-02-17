@@ -17,7 +17,7 @@ const Resume = () => {
         lg:w-[70%] justify-between max-w-4xl"
       >
         <div className="text-center">
-          <h2 className="main-gradient text-4xl mb-4">4+</h2>
+          <h2 className="main-gradient text-4xl mb-4">5+</h2>
           <p>Years of Experience</p>
         </div>
         <div className="text-center">
@@ -25,7 +25,7 @@ const Resume = () => {
           <p>Successful projects completed</p>
         </div>
         <div className="text-center">
-          <h2 className="main-gradient text-4xl mb-4">5+</h2>
+          <h2 className="main-gradient text-4xl mb-4">7+</h2>
           <p>Global customers</p>
         </div>
       </div>
@@ -56,17 +56,17 @@ const Resume = () => {
         </div>
         <div>
           <h2 className="main-gradient text-4xl mb-4 mt-20 lg:mt-0">Work Experience</h2>
+
+          <h3 className="text-2xl mt-10">Frontend Developer</h3>
+          <div className="flex justify-between text-gray-400 text-xs sm:text-sm md:text-md">
+            <p>Freelance, Córdoba, Argentina</p>
+            <p>&bull;&ensp;2023 - Present</p>
+          </div>
+
           <h3 className="text-2xl mt-10">Web UI Dev Semi Sr Advanced</h3>
           <div className="flex justify-between text-gray-400 text-xs sm:text-sm md:text-md">
             <p>Globant, Córdoba, Argentina</p>
             <p>&bull;&ensp;2019 - Present</p>
-          </div>
-
-          <hr className="h-px mt-6 bg-gray-800 border-0" />
-          <h3 className="text-2xl mt-6">Web UI and Mobile Developer</h3>
-          <div className="flex justify-between text-gray-400 text-xs sm:text-sm md:text-md">
-            <p>Risto - Córdoba, Argentina</p>
-            <p>&bull;&ensp;2023</p>
           </div>
 
           <hr className="h-px mt-6 bg-gray-800 border-0" />
