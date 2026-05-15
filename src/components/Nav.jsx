@@ -1,35 +1,52 @@
-import { headerLogo } from "../assets/images";
-import { navLinks } from "../constants";
+import { useState, useEffect } from 'react';
+import { navLinks } from '../constants';
 
 const Nav = () => {
+  const [scrolled, setScrolled] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => setScrolled(window.scrollY > 80);
+    window.addEventListener('scroll', handleScroll, { passive: true });
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
+
   return (
-    <header className="sm:px-16 px-8 pt-6 z-10 w-full border-b-[1px] border-slate-800">
-      <nav className="flex justify-between items-center max-container">
-        <a href="/">
-          <img
-            src={headerLogo}
-            alt="mateo verdaguer logo"
-            width={130}
-            height={30}
-            className="pb-3"
-          />
+    <header
+      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${
+        scrolled ? 'bg-[#09090A]/90 backdrop-blur-md border-b border-[#1A1A1E]' : ''
+      }`}
+    >
+      <nav className="flex justify-between items-center px-8 md:px-16 py-6 max-w-[1440px] mx-auto">
+        <a href="#home" className="font-display font-black text-lg tracking-tight text-[#F0EEE8]">
+          MV<span className="text-[#B8FF3C]">.</span>
         </a>
-        <ul className="flex flex-1 justify-center items-center gap-16 max-lg:hidden mb-4">
+
+        <ul className="hidden md:flex items-center gap-10">
           {navLinks.map((item) => (
             <li key={item.label}>
               <a
                 href={item.href}
-                className="font-montserrat leading-normal text-lg text-slate-200
-                hover:main-gradient transition-colors duration-300 ease-in-out"
+                className="font-mono text-[11px] tracking-[0.2em] uppercase text-[#5A5A62] hover:text-[#F0EEE8] transition-colors duration-300"
               >
                 {item.label}
               </a>
-              {/* <div className="hidden group-hover:block w-full h-1.5 mt-4 bg-gradient-to-r from-[rgba(177,108,234,1)]
-                via-[rgba(255,94,105,1)] to-[rgba(255,168,75,1)]">
-              </div> */}
             </li>
           ))}
         </ul>
+
+        <a
+          href="#contact"
+          className="hidden md:inline-flex items-center px-5 py-2.5 bg-[#B8FF3C] text-[#09090A] font-display font-bold text-xs tracking-tight rounded-full hover:bg-[#F0EEE8] transition-colors duration-300"
+        >
+          Hire Me
+        </a>
+
+        <a
+          href="#contact"
+          className="md:hidden text-[#B8FF3C] font-display font-bold text-xs"
+        >
+          Hire Me
+        </a>
       </nav>
     </header>
   );

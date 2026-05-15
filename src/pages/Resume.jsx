@@ -1,84 +1,142 @@
-import { resume1, resume2, resume3 } from "../assets/images";
+import { motion } from 'framer-motion';
 
-const Resume = () => {
-  return (
-    <section
-      id="resume"
-      className="sm:mt-12 flex flex-col items-center justify-center mx-6 my-20"
-    >
-      <div className="hidden lg:flex flex-col lg:flex-row gap-8">
-        <img src={resume1} alt="" className="w-[400px] lg:w-80 mb-2 mt-20 sm:mt-0 lg:mb-10 object-cover" />
-        <img src={resume2} alt="" className="h-[200px] w-[400px] lg:h-[500px] lg:w-80 mb-2 lg:mb-10 object-cover" />
-        <img src={resume3} alt="" className="h-[200px] w-[400px] lg:h-[500px] lg:w-80 lg:mb-10 mb-20 object-cover" />
-      </div>
+const stats = [
+  { number: '5+', label: 'Years of Experience' },
+  { number: '10+', label: 'Projects Completed' },
+  { number: '7+', label: 'Happy Clients' },
+];
 
-      <div
-        className="flex text-white font-jakarta-sans w-[90%]
-        lg:w-[70%] justify-between max-w-4xl"
+const experience = [
+  { role: 'Frontend Developer', company: 'Freelance', location: 'Córdoba, Argentina', period: '2023 — Now' },
+  { role: 'Web UI Dev Semi Sr Advanced', company: 'Globant', location: 'Córdoba, Argentina', period: '2019 — Now' },
+  { role: 'IT Help Desk', company: 'Key Soluciones', location: 'Córdoba, Argentina', period: '2018 — 2019' },
+];
+
+const certifications = [
+  { title: 'The Creative React & Redux Course', issuer: 'developedbyed.com', year: '2022' },
+  { title: 'JavaScript Course', issuer: 'Coderhouse', year: '2021' },
+  { title: 'JAVA 7 Oracle Certification', issuer: 'Academia CISCO, UTN', year: '2019' },
+];
+
+const Resume = () => (
+  <section id="resume" className="px-8 md:px-16 py-24 md:py-36 max-w-[1440px] mx-auto">
+
+    {/* Section header with clip reveal */}
+    <div className="pb-8 border-b border-[#1A1A1E] mb-16 relative overflow-hidden">
+      <span
+        className="absolute -top-4 -left-4 font-display font-black text-[#F0EEE8] leading-none select-none pointer-events-none"
+        style={{ fontSize: 'clamp(7rem, 18vw, 16rem)', opacity: 0.025 }}
+        aria-hidden
       >
-        <div className="text-center">
-          <h2 className="main-gradient text-4xl mb-4">5+</h2>
-          <p>Years of Experience</p>
-        </div>
-        <div className="text-center">
-          <h2 className="main-gradient text-4xl mb-4">10+</h2>
-          <p>Successful projects completed</p>
-        </div>
-        <div className="text-center">
-          <h2 className="main-gradient text-4xl mb-4">7+</h2>
-          <p>Global customers</p>
-        </div>
+        01
+      </span>
+      <motion.span
+        className="font-mono text-[11px] tracking-[0.25em] uppercase text-[#5A5A62] block mb-4"
+        initial={{ opacity: 0, y: 10 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true, margin: '-80px' }}
+        transition={{ duration: 0.6, ease: [0.16, 1, 0.3, 1] }}
+      >
+        01 / About
+      </motion.span>
+      <div className="overflow-hidden">
+        <motion.h2
+          className="font-display font-black text-[#F0EEE8] leading-none tracking-tighter"
+          style={{ fontSize: 'clamp(2.5rem, 7vw, 6rem)' }}
+          initial={{ y: '110%' }}
+          whileInView={{ y: '0%' }}
+          viewport={{ once: true, margin: '-80px' }}
+          transition={{ duration: 0.9, delay: 0.05, ease: [0.16, 1, 0.3, 1] }}
+        >
+          THE WORK
+        </motion.h2>
       </div>
+    </div>
 
-      <div className="mt-20 font-jakarta-sans text-slate-200 lg:grid lg:grid-cols-2
-      lg:gap-10 xl:gap-20">
-        <div>
-          <h2 className="main-gradient text-4xl mb-4">Certifications</h2>
-          <h3 className="text-2xl mt-10">The creative React and Redux course</h3>
-          <div className="flex justify-between text-gray-400 text-xs sm:text-sm md:text-md">
-            <p>developedbyed.com - Online</p>
-            <p>&bull;&ensp;2022</p>
-          </div>
+    {/* Stats */}
+    <div className="grid grid-cols-3 gap-3 md:gap-6 mb-20">
+      {stats.map((stat, i) => (
+        <motion.div
+          key={i}
+          className="border border-[#1A1A1E] rounded-2xl p-5 md:p-10 text-center hover:border-[#B8FF3C]/40 transition-colors duration-500"
+          initial={{ opacity: 0, y: 40 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, margin: '-60px' }}
+          transition={{ duration: 0.8, delay: i * 0.1, ease: [0.16, 1, 0.3, 1] }}
+        >
+          <span
+            className="font-display font-black text-[#B8FF3C] block leading-none mb-2"
+            style={{ fontSize: 'clamp(2.2rem, 6vw, 5rem)' }}
+          >
+            {stat.number}
+          </span>
+          <span className="font-mono text-[10px] md:text-xs tracking-[0.15em] uppercase text-[#5A5A62]">
+            {stat.label}
+          </span>
+        </motion.div>
+      ))}
+    </div>
 
-          <hr className="h-px mt-6 bg-gray-800 border-0" />
-          <h3 className="text-2xl mt-6">JavaScript Course</h3>
-          <div className="flex justify-between text-gray-400 text-xs sm:text-sm md:text-md">
-            <p>Coderhouse - Online</p>
-            <p>&bull;&ensp;2021</p>
-          </div>
+    {/* Experience + Certifications */}
+    <div className="grid md:grid-cols-2 gap-12 md:gap-20">
 
-          <hr className="h-px mt-6 bg-gray-800 border-0" />
-          <h3 className="text-2xl mt-6">JAVA 7 Oracle certification</h3>
-          <div className="flex justify-between text-gray-400 text-xs sm:text-sm md:text-md">
-            <p>Academia CISCO, UTN - Córdoba, Argentina</p>
-            <p>&bull;&ensp;2019</p>
+      <motion.div
+        initial={{ opacity: 0, y: 40 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true, margin: '-60px' }}
+        transition={{ duration: 0.8, delay: 0.15, ease: [0.16, 1, 0.3, 1] }}
+      >
+        <h3 className="font-mono text-[11px] tracking-[0.25em] uppercase text-[#5A5A62] mb-8">
+          Work Experience
+        </h3>
+        {experience.map((item, i) => (
+          <div key={i}>
+            <div className="group py-7">
+              <div className="flex justify-between items-start mb-1.5">
+                <h4 className="font-display font-bold text-lg text-[#F0EEE8] group-hover:text-[#B8FF3C] transition-colors duration-300 leading-tight pr-4">
+                  {item.role}
+                </h4>
+                <span className="font-mono text-xs text-[#5A5A62] shrink-0 mt-0.5">
+                  {item.period}
+                </span>
+              </div>
+              <p className="font-body text-sm text-[#5A5A62]">
+                {item.company} — {item.location}
+              </p>
+            </div>
+            {i < experience.length - 1 && <div className="h-px bg-[#1A1A1E]" />}
           </div>
-        </div>
-        <div>
-          <h2 className="main-gradient text-4xl mb-4 mt-20 lg:mt-0">Work Experience</h2>
+        ))}
+      </motion.div>
 
-          <h3 className="text-2xl mt-10">Frontend Developer</h3>
-          <div className="flex justify-between text-gray-400 text-xs sm:text-sm md:text-md">
-            <p>Freelance, Córdoba, Argentina</p>
-            <p>&bull;&ensp;2023 - Present</p>
+      <motion.div
+        initial={{ opacity: 0, y: 40 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true, margin: '-60px' }}
+        transition={{ duration: 0.8, delay: 0.25, ease: [0.16, 1, 0.3, 1] }}
+      >
+        <h3 className="font-mono text-[11px] tracking-[0.25em] uppercase text-[#5A5A62] mb-8">
+          Certifications
+        </h3>
+        {certifications.map((item, i) => (
+          <div key={i}>
+            <div className="group py-7">
+              <div className="flex justify-between items-start mb-1.5">
+                <h4 className="font-display font-bold text-lg text-[#F0EEE8] group-hover:text-[#B8FF3C] transition-colors duration-300 leading-tight pr-4">
+                  {item.title}
+                </h4>
+                <span className="font-mono text-xs text-[#5A5A62] shrink-0 mt-0.5">
+                  {item.year}
+                </span>
+              </div>
+              <p className="font-body text-sm text-[#5A5A62]">{item.issuer}</p>
+            </div>
+            {i < certifications.length - 1 && <div className="h-px bg-[#1A1A1E]" />}
           </div>
-
-          <h3 className="text-2xl mt-10">Web UI Dev Semi Sr Advanced</h3>
-          <div className="flex justify-between text-gray-400 text-xs sm:text-sm md:text-md">
-            <p>Globant, Córdoba, Argentina</p>
-            <p>&bull;&ensp;2019 - Present</p>
-          </div>
-
-          <hr className="h-px mt-6 bg-gray-800 border-0" />
-          <h3 className="text-2xl mt-6">IT Help Desk</h3>
-          <div className="flex justify-between text-gray-400 text-xs sm:text-sm md:text-md">
-            <p>Key Soluciones - Córdoba, Argentina</p>
-            <p>&bull;&ensp;2018 - 2019</p>
-          </div>
-        </div>
-      </div>
-    </section>
-  );
-};
+        ))}
+      </motion.div>
+    </div>
+  </section>
+);
 
 export default Resume;

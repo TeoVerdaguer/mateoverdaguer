@@ -1,32 +1,15 @@
-const Button = ({ label, iconURL, action, backgroundColor, textColor, borderColor, fullWidth }) => {
+const Button = ({ label, iconURL, action }) => {
   return (
-    // <button
-    //   className={`flex justify-center items-center gap-2
-    //   px-7 py-4 border font-montserrat text-lg leading-none
-      
-    //   ${
-    //     backgroundColor
-    //       ? `${backgroundColor} ${textColor} ${borderColor}`
-    //       : "bg-coral-red text-white border-coral-red}"
-    //   } rounded-lg ${fullWidth && 'w-full'}"}`}
-    // >
-      <button
-        className="flex justify-center items-center gap-2 px-7 py-4 font-montserrat text-lg leading-none
-        bg-gradient-to-r from-[#ff5e69] via-[#ff8a56] to-[#ffa84b] text-white rounded-lg
-        hover:shadow-lg hover:-translate-y-0.5"
-        onClick={action}
-      >
+    <button
+      className="inline-flex items-center gap-2 px-8 py-4 bg-[#B8FF3C] text-[#09090A] font-display font-bold text-sm rounded-full hover:bg-[#F0EEE8] transition-all duration-300 hover:scale-105"
+      onClick={action}
+    >
       {label}
-
       {iconURL && (
-        <img
-          src={iconURL}
-          alt="arrow right icon"
-          className="ml-2 rounded-full w-5 h-5"
-        />
+        <img src={iconURL} alt="" className="ml-1 w-5 h-5 rounded-full" />
       )}
     </button>
-  )
-}
+  );
+};
 
 export default Button;
